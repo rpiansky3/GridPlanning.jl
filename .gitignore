@@ -1,0 +1,61 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+Manifest.toml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Exclude resources folder (reference files from other projects)
+resources/
+
+
+# AI assistant state
+.claude/
+.superpowers/
+docs/superpowers/
+
+# Full data archive (not for distribution)
+data/
+
+# Log and temp files
+*.log
+*.tmp
+*.out
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Generated outputs (reproduce from source)
+figures/
+test_plots/
+tutorial_plots/
+tutorial_output/
+models/
+logs/
+results/
+test_output/
+test_results/
+
+# WFPI cache (downloaded GeoTIFFs, ~2-5 GB per year)
+test_data/USGS_FPI/cache/
+
+# Large solar data files (>100 MB, exceed GitHub limit — generate locally with generate_solar_data.jl)
+test_data/solar_data/Texas7k/
+test_data/solar_data/CATS/
+test_data/solar_data/WECC10k/

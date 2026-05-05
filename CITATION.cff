@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "GridPlanning.jl: Wildfire-Informed Transmission Switching Optimization"
+authors:
+  - family-names: Piansky
+    given-names: Ryan
+    alias: rpiansky3
+version: 0.1.0
+date-released: 2025-01-01
+url: "https://github.com/rpiansky3/GridPlanning.jl"
+repository-code: "https://github.com/rpiansky3/GridPlanning.jl"
+license: MIT
+keywords:
+  - wildfire
+  - transmission switching
+  - optimal power flow
+  - power systems
+  - Julia
+  - JuMP
+  - Gurobi
