@@ -1,7 +1,7 @@
 name = "GridPlanning"
 uuid = "f5e13df1-e776-4bef-88e9-4ff92826c373"
-authors = ["Ryan Piansky <@rpiansky3>"]
 version = "0.1.0"
+authors = ["Ryan Piansky <@rpiansky3>"]
 
 [deps]
 ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
@@ -22,7 +22,6 @@ Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 Shapefile = "8e980c4a-a4fe-5da2-b3a7-4b4b0353a2f4"
 
 [compat]
-julia = "1.10"
 ArgParse = "1"
 CSV = "0.10"
 DBFTables = "1"
@@ -31,8 +30,9 @@ GeoInterface = "1"
 Gurobi = "1"
 HTTP = "1"
 JLD2 = "0.4, 0.5, 0.6"
-JSON = "0.21"
+JSON = "0.21, 1"
 JuMP = "1"
 Plots = "1"
 PowerModels = "0.21"
 Shapefile = "0.13"
+julia = "1.10"
