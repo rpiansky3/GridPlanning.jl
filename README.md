@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/rpiansky3/GridPlanning.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/rpiansky3/GridPlanning.jl/actions/workflows/ci.yml)
 
-A comprehensive Julia package for solving wildfire-informed transmission switching problems using DC and linearized AC optimal power flow formulations.
+A Julia package for transmission grid planning on realistic power system networks. Provides DC and linearized AC formulations for co-optimizing line switching, line hardening, battery storage siting, and solar PV siting against load shedding, cost, and risk-exposure objectives. Applications include planning under severe-weather risk such as wildfires, with built-in support for USGS Fire Potential Index data.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -26,18 +26,18 @@ A comprehensive Julia package for solving wildfire-informed transmission switchi
 
 ## Overview
 
-This package provides a unified interface for solving optimal transmission switching (OTS) problems that account for wildfire risk. Users can optimize power system operations while minimizing load shedding, wildfire risk exposure, generation costs, or a weighted combination thereof.
+This package provides a unified interface for transmission grid planning problems on realistic power system networks. Operational decisions (line switching) and capital investments (line hardening, battery storage siting, solar PV siting) are co-optimized under a single objective — load shedding, generation cost, risk exposure, or a weighted tradeoff. The per-line risk interface is hazard-agnostic; the package ships with built-in data loaders for severe-weather risk applications, currently wildfire risk via the USGS Fire Potential Index.
 
 **Key Features:**
 - **Two formulations**: DC Optimal Transmission Switching (DCOTS) and Linear AC Optimal Transmission Switching (LACOTS)
-- **Multiple objective functions**: Load shedding minimization, wildfire risk minimization, cost minimization, and customizable tradeoffs
+- **Multiple objective functions**: Load shedding minimization, risk-exposure minimization, generation cost minimization, and customizable tradeoffs
 - **Two switching methods**: Optimal MIP-based and fast thresholded heuristic
-- **Line hardening**: Optimize infrastructure investments (vegetation management, covered conductors, or undergrounding) to permanently reduce wildfire risk
+- **Line hardening**: Optimize infrastructure investments (vegetation management, covered conductors, or undergrounding) to permanently reduce per-line risk exposure
 - **Battery energy storage systems (BESS)**: Optimize battery installation and operation for load shedding mitigation
 - **Solar PV installation**: Optimize solar capacity placement with hourly capacity factors and inverter reactive power support (LACOTS)
-- **Automatic data loading**: Built-in support for wildfire risk data from USGS Fire Potential Index
+- **Hazard-agnostic risk interface**: Accept any per-line risk signal; built-in loader for USGS Fire Potential Index (wildfire) included
 - **Multi-period optimization**: Solve for single days, specific date ranges, or entire months/years
-- **Flexible network support**: Pre-configured for 6+ power system test cases
+- **Flexible network support**: Pre-configured for 6+ realistic power system test cases (RTS-GMLC, CATS, Texas7k, ACTIVSg2000/10k, WECC240)
 
 ## Installation
 

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "GridPlanning.jl: Wildfire-Informed Transmission Switching Optimization"
+title: "GridPlanning.jl: Transmission Grid Planning with Co-Optimized Switching, Hardening, and Storage"
 authors:
   - family-names: Piansky
     given-names: Ryan
@@ -12,10 +12,15 @@ url: "https://github.com/rpiansky3/GridPlanning.jl"
 repository-code: "https://github.com/rpiansky3/GridPlanning.jl"
 license: MIT
 keywords:
-  - wildfire
-  - transmission switching
+  - transmission planning
   - optimal power flow
+  - optimal transmission switching
+  - line hardening
+  - battery storage siting
+  - solar PV siting
   - power systems
+  - severe weather risk
+  - wildfire
   - Julia
   - JuMP
   - Gurobi
